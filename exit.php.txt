@@ -1,0 +1,8 @@
+<?php
+unset($_SESSION['login']);
+unset($_COOKIE['save']);
+unset($_COOKIE[session_name()]);
+session_start();
+$new_url = 'index.php';
+header('Location: '.$new_url);
+?>
